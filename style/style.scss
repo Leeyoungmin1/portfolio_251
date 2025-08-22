@@ -38,7 +38,7 @@ body {
   background-color: var(--surface);
   color: var(--base);
   height: 100%;
-  user-select:none;
+  user-select: none;
 }
 
 img {
@@ -112,7 +112,7 @@ footer {
 }
 
 .section {
-  max-width: 1600px;
+  max-width: 1400px;
   padding-inline: 40px;
   margin-inline: auto;
 }
@@ -151,7 +151,6 @@ footer {
     font-size: 24px;
     font-weight: 600;
     line-height: 100%;
-    
   }
 }
 
@@ -162,12 +161,12 @@ footer {
     width: 100%;
     position: relative;
     overflow: hidden;
-    
+
     &:hover {
       .thumbnail {
         filter: blur(2px);
       }
-    
+
       .overlay-1 {
         opacity: 1;
       }
@@ -257,7 +256,6 @@ footer {
           opacity: 1;
         }
       }
-      
     }
   }
 
@@ -518,7 +516,7 @@ footer {
         font-weight: 700;
         line-height: 100%;
       }
-      
+
       &--tag {
         display: block;
         align-items: center;
@@ -534,7 +532,7 @@ footer {
         letter-spacing: 1px;
         padding: 12px 14px;
       }
-      
+
       &--desc {
         display: grid;
         gap: 8px;
@@ -577,16 +575,15 @@ footer {
 }
 
 .thumbnail {
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 
 .overlay-1 {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 70%, var(--base) 105%);
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .overlay-2 {
@@ -598,7 +595,7 @@ footer {
   text-align: center;
   background: var(--base-transparent);
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 //커스텀 커서
@@ -611,18 +608,13 @@ footer {
   border-radius: 4px 50% 50% 50%;
   pointer-events: none;
   z-index: 99;
-  transition: 
-    background-color 150ms, 
-    opacity 500ms, 
-    width 200ms, 
-    height 200ms,
-  ;
+  transition: background-color 150ms, opacity 500ms, width 200ms, height 200ms;
 }
 
 #custom-cursor.hover {
   width: 40px;
   height: 40px;
-  opacity: .8 !important;
+  opacity: 0.8 !important;
 }
 
 #custom-cursor.click {
@@ -682,7 +674,6 @@ footer {
       column-gap: 0;
       margin: 5vh auto;
 
-      
       &--info {
         grid-template-columns: 1fr;
 
@@ -725,7 +716,7 @@ footer {
   }
 }
 
-@media (max-width: 620px) {  
+@media (max-width: 620px) {
   main {
     .section {
       padding-inline: 4px;
